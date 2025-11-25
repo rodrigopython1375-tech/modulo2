@@ -1,0 +1,25 @@
+.hero-section {
+    background-image: url("../img/happypet\ tienda\ de\ juguetes\ para\ mascotas.jpg");
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    text-align: start;
+    padding: 100px 0;
+}
+
+.hero-section h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+}
+.dark {
+    background-color: #1f1f1f;
+    color: #8e8e8e;
+}
+.light {
+    background-color: #ffffff;
+    color: #000000;
+}

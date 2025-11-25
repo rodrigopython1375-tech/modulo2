@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Mi pagina Web</title>
+        <link rel="stylesheet" href="assets/css/styles.css" />
+    </head>
+    <body>
+        <!-- La etiqueta <header> nos permite identificar la cabecera de una página o documento concreto -->
+        <header>
+            <!-- La etiqueta <h1> es el titular con más importancia del documento. -->
+            <h1>Rodrigo Oyarzun</h1>
+            <!-- se usa para definir un párrafo de texto en una página web -->
+            <p>
+                En este parte del curso deseo comprender HTML, CSS y javascrip
+            </p>
+        </header>
+
+        <!-- La etiqueta HTML <article> se utiliza para agrupar información muy relevante de una página o documento concreto. -->
+        <article>
+            <!--section es la columna de informacion personal, contiene la informacion mas relevante del documento -->
+            <section>
+                <h2>HTML</h2>
+                <p>Como empece el ejercicio</p>
+                <a
+                    href="https://depositphotos.com/es/vector/cartoon-computer-frustration-13951197.html"
+                    target="_blank"
+                    ><div class="imagen_3"></div
+                ></a>
+            </section>
+            <!-- aside es la barra lateral se ubica al lado de la columna informacion Principal -->
+            <aside>
+                <h2 class="html">Tabla etiquetas HTML mas comunes</h2>
+                <table class="html">
+                    <tr>
+                        <th>h1</th>
+                        <th>p</th>
+                        <th>a</th>
+                        <th>img</th>
+                    </tr>
+                    <tr>
+                        <td>para un encabezado principal.</td>
+                        <td>para crear un párrafo.</td>
+                        <td>para crear un enlace.</td>
+                        <td>para insertar una imagen</td>
+                    </tr>
+                </table>
+            </aside>
+        </article>
+        <article>
+            <section>
+                <h2>CSS</h2>
+                <p>Como termine</p>
+                <a
+                    href="https://depositphotos.com/es/vector/cartoon-online-success-14003453.html"
+                    target="_blank"
+                    ><div class="imagen_2" root="programador_lo_logre"></div>
+                </a>
+            </section>
+            <aside>
+                <h2 class="css">Tipos de Selectores CSS</h2>
+                <table class="css">
+                    <tr>
+                        <th>Nombre del selector</th>
+                        <th>Que selecciona</th>
+                        <th>Ejemplo</th>
+                    </tr>
+                    <tr>
+                        <td>Selector de elemento</td>
+                        <td>Todos los elementos HTML</td>
+                        <td>h1 selecciona los titulos h1</td>
+                    </tr>
+                    <tr>
+                        <td>Selector de identificacion ID</td>
+                        <td>elemento en la pagina con ID especificado</td>
+                        <td>#mi-id selecciona h1 id="mi-id" y p id="mi-id"</td>
+                    </tr>
+                    <tr>
+                        <td>Selector de clase</td>
+                        <td>elementos en la pagina con la clase determinada</td>
+                        <td>
+                            .mi-clase selecciona h1 class="mi-clase" y p
+                            class="mi-clase"
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Selector de atributo</td>
+                        <td>
+                            los elementos en la pagina con atrbuto especificado
+                        </td>
+                        <td>
+                            img[src] selecciona img src="mi-imagen" pero no img
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Selector de pseudoclase</td>
+                        <td>
+                            los elementos especificados, pero solo cuando este
+                            en el estado especifico, ejemplo cuando el puntero
+                            esta sobre el
+                        </td>
+                        <td>
+                            a: hover selecciona a, pero cuando el puntero esta
+                            sobre el enlace
+                        </td>
+                    </tr>
+                </table>
+            </aside>
+        </article>
+        <br />
+        <!-- footer define la sección del pie de página de un documento web. Típicamente contiene información como derechos de autor, enlaces a páginas legales, información de contacto y enlaces a redes sociales -->
+        <br />
+        <footer>
+            rodrigooya@gmail.com, fono 782372389, derechos reservados
+        </footer>
+    </body>
+</html>

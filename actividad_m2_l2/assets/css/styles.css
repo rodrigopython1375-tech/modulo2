@@ -1,0 +1,77 @@
+body {
+    background-color: lightblue;
+}
+h1 {
+    color: red;
+}
+img {
+    width: 400px;
+    height: 300px;
+    margin: auto;
+    display: block;
+}
+/* agregados por mi para que queden divididos las secciones y se vea mejor  */
+
+article {
+    display: flex;
+}
+section {
+    width: 50%;
+    display: inline-block;
+}
+aside {
+    width: 45%;
+    display: inline-block;
+}
+table,
+th,
+td {
+    border: 1px solid black; /* Define un borde negro de 1 píxel de grosor */
+    border-collapse: collapse; /* Une los bordes de las celdas */
+}
+th,
+td {
+    padding: 8px; /* Añade espacio entre el contenido y el borde */
+    text-align: left; /* Alinea el texto a la izquierda */
+}
+
+.html {
+    background-color: gold;
+    text-align: center;
+    color: rgb(18, 38, 94);
+}
+.css {
+    background-color: darkmagenta;
+    text-align: center;
+    color: rgb(193, 193, 207);
+}
+.imagen_2 {
+    background-image: url(../img/programador_lo_logre.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 400px;
+    height: 300px;
+    display: block;
+    margin: auto;
+    opacity: 1; /* Opacidad completa por defecto */
+    transition: opacity 0.3s ease-in-out; /* Transición suave */
+}
+.imagen_2:hover {
+    opacity: 0.3; /* Nueva opacidad (ej. 50% transparente) */
+}
+.imagen_3 {
+    background-image: url(../img/programador.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 400px;
+    height: 300px;
+    display: block;
+    margin: auto;
+    opacity: 1; /* Opacidad completa por defecto */
+    transition: opacity 0.3s ease-in-out; /* Transición suave */
+}
+.imagen_3:hover {
+    opacity: 0.3; /* Nueva opacidad (ej. 50% transparente) */
+}

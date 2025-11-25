@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+            crossorigin="anonymous"
+        />
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="container-fluid row pt-5">
+            <div class="justify-content-center text-center col-md-6 col-sx-10">
+                <button id="show">Ocultar lista</button>
+                <h3 class="pt-3">Elementos:</h3>
+                <ul
+                    class="text fs-5 pt-2 justify-content-center list-group"
+                    id="lista"
+                    style="display: block"
+                >
+                    <li class="list-group-item">elemento1</li>
+                    <li class="list-group-item">elemento2</li>
+                    <li class="list-group-item">elemento3</li>
+                </ul>
+                <button id="addElement">Agregar elemento</button>
+                <button id="removeElement">Eliminar elemento</button>
+            </div>
+            <div class="container-fluid pt-5 col-md-6 col-sx-10">
+                <h3>haga click en la imagen</h3>
+                <img
+                    src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%2Fid%2FOIP.9SI3Sz-Sg94Cpuzbz25YwwHaHa%3Fpid%3DApi&f=1&ipt=aaf0eba81a2a37990dcaee7c556e844390cd9e2613fca540d6eee084eee40bee&ipo=images"
+                    class="img-top"
+                    height="200px"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modaluno"
+                />
+                <div class="modal fade" id="modaluno" tabindex="-1">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <h2>Despues de terminar la tarea</h2>
+                            <p class="p-4">
+                                Modal funcional al hacer click en foto
+                            </p>
+                        </div>
+                        <button
+                            type="button"
+                            class="btn btn-secondary"
+                            data-bs-dismiss="modal"
+                        >
+                            Close
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script
+            src="https://code.jquery.com/jquery-3.7.1.min.js"
+            integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+            crossorigin="anonymous"
+        ></script>
+        <script src="script.js"></script>
+    </body>
+</html>

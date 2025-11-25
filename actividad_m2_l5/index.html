@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="assets/css/style.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+            integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <title>Document</title>
+    </head>
+    <body class="colorvar">
+        <header id="section1">
+            <nav
+                class="navbar fixed-top navbar-expand-lg navbar-light"
+                data-bs-theme="dark"
+            >
+                <div class="container-fluid">
+                    <a class="navbar-brand pt-2 ps-2" href="#">
+                        <img
+                            src="assets/img/947d20e6-bb20-49f9-85f7-76d64bdf0dc9.jpeg"
+                            alt=""
+                            height="60px"
+                        />
+                    </a>
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                    >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div
+                        class="collapse navbar-collapse"
+                        id="navbarSupportedContent"
+                    >
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link active"
+                                    aria-current="page"
+                                    href="#"
+                                    >Inicio</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link active"
+                                    aria-current="page"
+                                    href="#"
+                                    >Productos</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link active"
+                                    aria-current="page"
+                                    href="#"
+                                    >Ofertas</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link active"
+                                    aria-current="page"
+                                    href="#"
+                                    >Contacto</a
+                                >
+                            </li>
+                        </ul>
+                        <ul class="nav navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link active"
+                                    aria-current="page"
+                                    href="#"
+                                    ><i class="fa-solid fa-cart-shopping"></i
+                                ></a>
+                            </li>
+                            <button onclick="changeColor()" id="modo">
+                                modo oscuro
+                            </button>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <section class="hero-section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <h1 class="text-black">Bienvenidos a Happypet</h1>
+                            <p>todos los juguetes para tus mascotas</p>
+                            <button
+                                onclick="boton()"
+                                class="btn btn-primary"
+                                id="ofertas"
+                            >
+                                Ofertas
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </header>
+
+        <section>
+            <h2 class="text-center py-5">Catálogo</h2>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-4 pb-5" data-image-group="on">
+                        <div class="card" style="width: 100%">
+                            <img
+                                src="assets/img/13842ba3-b2e3-44f8-9bbf-a6b6606a6f3f.jpeg"
+                                class="card-img-top"
+                                height="200px"
+                                data-bs-toggle="modal"
+                                data-bs-target="#modaluno"
+                            />
+
+                            <div class="modal fade" id="modaluno" tabindex="-1">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <h2>Set patos goma</h2>
+                                        <p class="p-4">
+                                            Juguete de plastico ideal para la
+                                            hora del baño.
+                                        </p>
+                                    </div>
+                                    <button
+                                        type="button"
+                                        class="btn btn-secondary"
+                                        data-bs-dismiss="modal"
+                                    >
+                                        Close
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="card-body">
+                                <h5 class="card-title">Set patos goma</h5>
+                                <p class="card-text">$5.000.-</p>
+                                <div class="row justify-content-center">
+                                    <a
+                                        href="#"
+                                        class="btn btn-outline-info text-info col-4"
+                                        >Añadir al carrito</a
+                                    >
+                                    <div
+                                        style="display: flex"
+                                        class="producto col-6"
+                                        data-produc-id="2"
+                                    >
+                                        <button
+                                            class="btn btn-primary btn-like col-4"
+                                            onclick="sumar()"
+                                        >
+                                            <i
+                                                class="fa fa-thumbs-up"
+                                                aria-hidden="true"
+                                            ></i>
+                                        </button>
+                                        <span class="count-like">0</span>likes
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 pb-5">
+                        <div class="card" style="width: 100%">
+                            <img
+                                src="assets/img/677935c7-853b-4ad7-9f87-2b843d88e4be.jpeg"
+                                class="card-img-top"
+                                height="200px"
+                                data-bs-toggle="modal"
+                                data-bs-target="#modaldos"
+                            />
+                            <div class="modal fade" id="modaldos" tabindex="-1">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <h2>Pelota tenis Naranja</h2>
+                                        <p class="p-4">
+                                            Para que tus paseos sean más
+                                            entretenidos.
+                                        </p>
+                                    </div>
+                                    <button
+                                        type="button"
+                                        class="btn btn-secondary"
+                                        data-bs-dismiss="modal"
+                                    >
+                                        Close
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Pelota tenis Naranja</h5>
+                                <p class="card-text">$2.500.-</p>
+                                <div class="row justify-content-center">
+                                    <a
+                                        href="#"
+                                        class="btn btn-outline-info text-info col-4"
+                                        >Añadir al carrito</a
+                                    >
+                                    <div
+                                        style="display: flex"
+                                        class="producto col-6"
+                                        data-produc-id="2"
+                                    >
+                                        <button
+                                            class="btn btn-primary btn-like col-4"
+                                            onclick="sumar()"
+                                        >
+                                            <i
+                                                class="fa fa-thumbs-up"
+                                                aria-hidden="true"
+                                            ></i>
+                                        </button>
+                                        <span class="count-like">0</span>likes
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 pb-5" data-image-group="on">
+                        <div class="card" style="width: 100%">
+                            <img
+                                src="assets/img/e6a89979-a643-4371-a635-a6c0ef12fbd5.jpeg"
+                                class="card-img-top"
+                                height="200px"
+                                data-bs-toggle="modal"
+                                data-bs-target="#modaltres"
+                            />
+                            <div
+                                class="modal fade"
+                                id="modaltres"
+                                tabindex="-1"
+                            >
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <h2>Disco frisbee goma</h2>
+                                        <p class="p-4">Para jugar y morder</p>
+                                    </div>
+                                    <button
+                                        type="button"
+                                        class="btn btn-secondary"
+                                        data-bs-dismiss="modal"
+                                    >
+                                        Close
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Disco frisbee goma</h5>
+                                <div class="row text-end justify-content-end">
+                                    <div class="row justify-content-center">
+                                        <p class="card-text">$2.500.-</p>
+                                        <a
+                                            href="#"
+                                            class="btn btn-outline-info text-info col-4"
+                                            >Añadir al carrito</a
+                                        >
+                                        <div
+                                            style="display: flex"
+                                            class="producto col-6"
+                                            data-produc-id="2"
+                                        >
+                                            <button
+                                                class="btn btn-primary btn-like col-4"
+                                                onclick="sumar()"
+                                            >
+                                                <i
+                                                    class="fa fa-thumbs-up"
+                                                    aria-hidden="true"
+                                                ></i>
+                                            </button>
+                                            <span class="count-like">0</span
+                                            >likes
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-4 pb-5">
+                        <div class="card" style="width: 100%">
+                            <img
+                                src="assets/img/2dc0aa53-7dbc-4ccf-940e-b02b64ccbb50.jpeg"
+                                class="card-img-top"
+                                data-bs-toggle="modal"
+                                data-bs-target="#modalcuatro"
+                                height="200px"
+                            />
+                            <div
+                                class="modal fade"
+                                id="modalcuatro"
+                                tabindex="-1"
+                            >
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <h2>Pelota tejida</h2>
+                                        <p class="p-4">
+                                            Tejida a crochet. Ideal para
+                                            destruir
+                                        </p>
+                                    </div>
+                                    <button
+                                        type="button"
+                                        class="btn btn-secondary"
+                                        data-bs-dismiss="modal"
+                                    >
+                                        Close
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Pelota tejida</h5>
+                                <p class="card-text">$5.000.-</p>
+                                <div class="row justify-content-center">
+                                    <a
+                                        href="#"
+                                        class="btn btn-outline-info text-info col-4"
+                                        >Añadir al carrito</a
+                                    >
+                                    <div
+                                        style="display: flex"
+                                        class="producto col-6"
+                                        data-produc-id="2"
+                                    >
+                                        <button
+                                            class="btn btn-primary btn-like col-4"
+                                            onclick="sumar()"
+                                        >
+                                            <i
+                                                class="fa fa-thumbs-up"
+                                                aria-hidden="true"
+                                            ></i>
+                                        </button>
+                                        <span class="count-like">0</span>likes
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 pb-5">
+                        <div class="card" style="width: 100%">
+                            <img
+                                src="assets/img/juguete-mordillo-con-patitas-blando.png"
+                                class="card-img-top"
+                                height="200px"
+                                data-bs-toggle="modal"
+                                data-bs-target="#modalcinco"
+                            />
+                            <div
+                                class="modal fade"
+                                id="modalcinco"
+                                tabindex="-1"
+                            >
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <h2>Juguete mordillo con patitas</h2>
+                                        <p class="p-4">
+                                            Para que tus paseos sean más
+                                            entretenidos
+                                        </p>
+                                    </div>
+                                    <button
+                                        type="button"
+                                        class="btn btn-secondary"
+                                        data-bs-dismiss="modal"
+                                    >
+                                        Close
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    Juguete mordillo con patitas
+                                </h5>
+                                <p class="card-text">$2.500.-</p>
+                                <div class="row justify-content-center">
+                                    <a
+                                        href="#"
+                                        class="btn btn-outline-info text-info col-4"
+                                        >Añadir al carrito</a
+                                    >
+                                    <div
+                                        style="display: flex"
+                                        class="producto col-6"
+                                        data-produc-id="2"
+                                    >
+                                        <button
+                                            class="btn btn-primary btn-like col-4"
+                                            onclick="sumar()"
+                                        >
+                                            <i
+                                                class="fa fa-thumbs-up"
+                                                aria-hidden="true"
+                                            ></i>
+                                        </button>
+                                        <span class="count-like">0</span>likes
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="d-flex justify-content-center">
+            <button
+                href="#section1"
+                id="link1"
+                type="button"
+                class="btn btn-outline-danger"
+            >
+                Ir arriba
+            </button>
+        </div>
+        <footer class="text-center bg-ligth">
+            Grupo 3 todos los derechos reservados
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+        <script src="assets/js/scripts.js"></script>
+    </body>
+</html>

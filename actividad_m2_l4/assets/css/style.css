@@ -1,0 +1,20 @@
+.hero-section {
+    background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%2Fid%2FOIP.3lwoSraG3sLFjYCSqxGZTwHaEK%3Fpid%3DApi&f=1&ipt=b7f37f35aaed6acbc2651e2ee2b1c03cb45b03b6f456c0e130b3f0eb834f32bf&ipo=images");
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    text-align: start;
+    padding: 100px 0;
+}
+
+.hero-section h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+}
+.fondo {
+    background-color: lightblue;
+}
